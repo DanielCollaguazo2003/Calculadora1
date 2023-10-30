@@ -1,0 +1,25 @@
+<div class="vista-container">
+    <div class="div-container">
+        <label class="label" for="numero1">{{entrada}}</label>
+        <button class="boton" id="siete" (click)="obtenerValor(7)">7</button>
+        <button class="boton" id="ocho" (click)="obtenerValor(8)">8</button>
+        <button class="boton" id="nueve" (click)="obtenerValor(9)">9</button>
+        <button class="boton" id="multiplicacion" (click)="agregarOperador('*')">x</button>
+        <button class="boton" id="cuatro" (click)="obtenerValor(4)">4</button>
+        <button class="boton" id="cinco" (click)="obtenerValor(5)">5</button>
+        <button class="boton" id="seis" (click)="obtenerValor(6)">6</button>
+        <button class="boton" id="resta" (click)="agregarOperador('-')">-</button>
+        <button class="boton" id="uno" (click)="obtenerValor(1)">1</button>
+        <button class="boton" id="dos" (click)="obtenerValor(2)">2</button>
+        <button class="boton" id="tres" (click)="obtenerValor(3)">3</button>
+        <button class="boton" id="suma" (click)="agregarOperador('+')">+</button>
+        <button class="boton" id="cero" (click)="obtenerValor(0)">0</button>
+        <button class="boton" id="igual" (click)="calcularOperaciones()">=</button>
+        <button class="boton" id="borrar" (click)="borrarDatos()">CA</button>
+        <button class="boton" id="division" (click)="agregarOperador('/')">÷</button>
+    </div>
+
+    <div class="resultado">
+        <h1>El resultado es: {{resultado}}</h1>
+    </div>
+</div>
